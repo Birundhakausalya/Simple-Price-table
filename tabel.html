@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="icon" href="/picture.png">
+    <style>
+        body{
+           background-color: rgb(190, 157, 157);
+           font-family: Arial;
+        }
+        h1{
+            text-align:center;
+            background-color: aliceblue;
+            padding:10px;
+        }
+        table{
+            border-collapse: collapse;
+            margin:50px auto;
+            width: 80%;
+            background:white;
+        }
+        caption{
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom:10px;
+        }
+       th,td{
+            border:2px solid black;
+            padding:10px;
+            text-align: center;
+            white-space: nowrap;
+            
+        }
+        th :nth-child(5){
+            background-color: rgb(125, 119, 119);
+            color:white;
+            white-space: nowrap;
+            border-left: 5px solid black ;
+        }
+    </style>
+</head>
+<body>
+    <h1><mark style="background-color:rgb(25, 173, 173);">Time Table</mark></h1>
+    <table>
+        <caption>Weekly Time Table</caption><br><br>
+        <tr><hr>
+            <th>Day</th>
+            <th>9.00-10.00</th>
+            <th>10.00-11.00</th>
+            <th>11.00-12.00</th>
+            <th style="background-color:rgb(12, 235, 83);">12.00-1.00 / BREAK</th>
+            <th>1.00-2.00</th>
+            <th>2.00 - 3.00</th>
+            <th>3.30-4.30</th>
+        </tr>
+        <tr>
+            <td>Monday</td>
+            <td>Maths</td>
+            <td>English</td>
+            <td>Science</td>
+            <td style="background-color: rgb(225, 225, 10);">Lunch</td>
+            <td>Computer</td>
+            <td>Physics Lab</td>
+            <td>Physics Lab</td>
+        </tr>
+        <tr>
+            <td>Tuesday</td>
+            <td>Physics</td>
+            <td>Maths</td>
+            <td>Chemistry</td>
+            <td style="background-color: yellow;">Lunch</td>
+            <td>Biology</td>
+            <td>Chemistry Lab</td>
+            <td>Chemistry Lab</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td>Biology</td>
+            <td>English</td>
+            <td>Computer</td>
+            <td style="background-color: yellow;">Lunch</td>
+            <td>PT</td>
+            <td>Pt</td>
+            <td>Social</td>
+        </tr>
+        <tr>
+            <td>Thursday</td>
+            <td>Maths</td>
+            <td>Computer Science</td>
+            <td>English</td>
+            <td style="background-color: yellow;">Lunch</td>
+            <td>Physics</td>
+            <td>Social</td>
+            <td>GK</td>
+        </tr>
+    </table>
+</body>
+</html>

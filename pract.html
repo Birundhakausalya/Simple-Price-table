@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML & CSS Learning Platform</title>
+    <link rel="icon" href="https://nazmidincer.com/assets/img/e-learning-platform-development.jpg">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .body{
+            margin: 0%;
+            font-family: arial;
+        }
+        .header{
+            background-color: white;
+            padding: 20px;
+            color:black;
+            text-align:left;
+        }
+        .sidebar{
+            text-align: left;
+            background-color: aqua;
+            width: 15%;
+            color: blue;
+            padding:3px
+        
+        }
+        .sidebar-li{
+          list-style: none;
+            padding:10px;
+        }
+        .sidebar-ul{
+            padding:10px;
+        }
+        .content{
+            padding: 20px;
+        }
+        .container{
+            display: flex;
+        }
+        .sidebar-img{
+            width: 100%;
+            height:auto;
+            margin-bottom:20px;
+            border-radius: 8px;
+        }
+        .section{
+                margin-bottom: 40px;
+                
+            }
+        .box{
+            background-color: yellowgreen;
+            padding:10px;
+        }
+        .btn{
+            padding:15px;
+            background-color: rgb(109, 17, 17);
+            margin: 5%;
+            border: none;
+            cursor:pointer;
+            transition: 0.3s;
+
+
+        }
+        .rounded{
+            background-color:aqua ;
+             color:white;
+            border-radius: 40px;
+
+        }
+        .shadow{
+            background-color:aqua ;
+            color:white; 
+            box-shadow: 2px 2px 5px rgb(red, green, blue);      
+        }
+        .normal{
+            background-color:aqua;
+            color:white;
+        }
+        .btn:hover{
+            opacity:0.8;
+            background-color: rgb(68, 255, 0);
+        }
+        /* .btn normal{
+            opacity:0.6;
+            background-color: aqua;
+            color: white;
+            cursor: wait;
+        } */
+         .card{
+            padding:10px;
+            text-align: center;
+            align-content:center;
+            background-color: rgb(212, 129, 22);
+            margin: 5%;
+         }
+         .flex{
+           flex-direction:row;
+         }
+         .grid{
+            grid-template-columns: 4fr;
+         }
+         footer{
+            background-color: blueviolet;
+            color:white;
+            text-align:center;
+            padding:15px;
+         }
+       table th.td{
+        border: 2px dotted pink;
+        padding: 10px;
+       }
+       table{
+
+       }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <h1>HTML & CSS</h1>
+    </header>
+    <div class="container">
+<aside class="sidebar">
+    <img src="https://png.pngtree.com/png-clipart/20231002/original/pngtree-teacher-study-learning-png-image_13067537.png" alt="image" class="sidebar-img" >
+    <a href="https://png.pngtree.com/png-clipart/20231002/original/pngtree-teacher-study-learning-png-image_13067537.png" target="_" class="sidebar-img">Touch</a>
+    <ul>
+    <li>HTML Introduction</li>
+    <li>HTML Basic</li>
+    <li>HTML Commands</li>
+    <li>HTML Tags</li>
+    <li>HTML Attributes</li>
+    <li>HTML Code</li>
+</ul>
+</aside>
+<main class="content">
+    <section>
+        <h2>HTMl Introduction</h2>
+        <p>HTML is used to create structure of web page.</p>
+        <div class="box">This is a div element example</div>
+    </section>
+    <section>
+        <h2>Button</h2>
+        <button class="btn rounded">click</button>
+        <button class="btn shadow">click</button>
+        <button onclick="alert('correct!')"  type="click" class="btn normal">click</button>
+    </section>
+    <section>
+        <h2>HTML Form</h2>
+        <form>
+        <label for="name">Name:</label>
+        <input type="text" autocomplete="off" placeholder="Enter Your Name" id="name" pattern="[A-za-z]+" title="only letters allowed" required><br><br>
+        <label for="email">Email ID:</label>
+        <input type="text" autocomplete="off" placeholder="Enter your mail id " id="email"><br><br>
+        <label for="number">Phone Number:</label>
+        <input type="number" autocomplete="off" placeholder="Enter your mobile number" id="number"><br><br>
+        <label for="password" >Password:</label>
+        <input type="password"  placeholder="Enter your password"><br><br>
+        <label><input type="radio" name="gender">Female</label>
+        <label><input type="radio" name="gender">Male</label>
+        <label><input type="checkbox">Accept Terms</label><br><br>
+        <button  onclick="alert('Completed!!') "class="btn hover" type="submit">Submit</button>
+</form>
+    </section>
+    <section>
+        <h2>Flexbox Layout </h2>
+        <div class="flex">
+            <div class="card">Box 1</div>
+            <div class="card">Box 2</div>
+            <div class="card">Box 3</div>
+        </div>
+    </section>
+    <section>
+        <h2> Grid Layout </h2>
+        <div class="grid">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+        </div>
+    </section>
+    <section>
+        <form class="table">
+            <table>
+                <tr>
+                    <th>HTMl</th>
+                    <th>CSS</th>
+                </tr>
+                <tr>
+                    <td>birundha</td>
+                    <td>Intrested</td>
+                </tr>
+                <tr>
+                    <td>Kausalya</td>
+                    <td>Not Intrested</td>
+                </tr>
+            </table>
+        </form>
+    </section>
+    </main>
+    </div>
+     <footer>
+        <p>&copy; 2026 HTML & CSS Learning | All Rights Reserved</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Registration Form</title>
+    <link rel="icon" href="img.png">
+    <style>
+        body{
+            margin: 0;
+            background-color: bisque;
+            padding:0%;
+            font-family:arial;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container{
+            width:500px;
+            background:wheat;
+            padding:30px;
+            border-radius:10px;
+            text-align: center;
+        }
+
+        .section{
+            border-radius: 5%;
+            color:black;
+            padding:10px;
+            height: auto;
+        }
+        .section:hover{
+            opacity:0.8;
+            background-color: yellow;
+        }
+        .btn{
+            padding:3px;
+            border: 10%;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .btn:hover{
+            opacity:0.8;
+            background-color:brown;
+        }
+        .btn-rounded{
+            padding:5px;
+            border:10%;
+            cursor: wait;
+            border-radius:5px;
+        }
+        .register{
+            margin-top: 10px ;
+            font-size:14px ;
+        }
+        footer{
+            background-color: blueviolet;
+            text-align: center;
+            padding: 10px;
+            color:white;
+            margin-top: auto;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <h1> Login page </h1><br><br>
+    <section class="section">
+        <form>
+            <label for="name">Username:</label>
+            <input type="text" autocomplete="off" placeholder="Enter username" id="name" pattern="[A-za-z]+" title="only letters allowed" required><br><br>
+            <label for="password">Password:</label>
+            <input type="password" autocomplete="off" placeholder="Enter password" id="name"><br><br>
+            <button type="submit" class="btn" onclick="alert('Completed!(❁´◡`❁)')" >Submit</button>
+            <button type="reset" class="btn" onclick="alert('Refresh!!')">Reset</button>
+        </form>
+    </section>
+    <section>
+        <div class="register">
+           Don't have an account?<a href="" target="_blank">Register</a>
+        </div>
+    </section> <br><br>
+    <hr>
+        <h2>Employee Registration Form </h2>
+        <section class="section">
+            <form>     
+            <label for="fname">First Name:</label>
+            <input type="text" autocomplete="off" placeholder="Enter Your Firat Name" id="fname" pattern="[A-za-z]+" title="only letters allowed" required><br><br>
+            <label for="name">Last Name:</label>
+            <input type="ltext" autocomplete="off" placeholder="Enter Your last Name" id="lname" pattern="[A-za-z]+" title="only letters allowed" required><br><br>
+            <label for="Email">Email Address:</label>
+            <input type="text" autocomplete="off" placeholder="Enter Your Email ID" id="name"><br><br>
+            <label for="Password">Password:</label>
+            <input type="password" autocomplete="off" placeholder="Enter Password"><br><br>
+            <label for="phone number">Phone Number:</label>
+            <input type="text" autocomplete="off" placeholder="Enter Phone Number" id="name"><br><br>
+            <button type="submit" onclick="alert('Successfully completed')" class="btn">Submit</button>
+            </form>
+        </section>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2026 Employee Registration Apllication | Process</p>
+    </footer>
+</body>
+</html>
+

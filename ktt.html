@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!-- head elements -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- responsive design -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- page <title> -->
+    <title>Food spot</title>
+    <!-- image icon element favicon -->
+     <link rel="icon" href="image .png" type="image/png">
+     <!-- stylesheet link External tags -->
+     <link rel="stylesheet" href="style.css">
+    <!-- css text -->
+     <!-- styles -->
+    <style>
+        /* media Queries for responsive design */
+        @media (max-width: 600px){
+             /* text color change */
+        body{
+            background-image: url("image.png");
+            background-repeat: repeat-x;
+        }
+        a.link{
+            color:red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a.visited{
+            color:yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+        a.hover{
+            color:green;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+        a.active{
+            color:palevioletred;
+            background-color: transparent;
+            text-decoration: underline;
+        }
+    }
+    /* .container{
+        display:grid;
+        grid-template-columns:1fr 1fr 1fr;
+        gap: 10px;
+    }
+    .box{
+        background-color:pink;
+        padding:20px;
+        text-align:center;
+    } */
+    /* flex Box */
+    /* text content */
+        .text{
+            justify-content: right;
+            flex-direction: column;
+            text-align:center;
+            position:absolute;
+            top:50%;
+            left:50%;
+            color:white;
+            font-size:18px;
+            font-weight:bold;
+            transform: translate(-50%, -40%);
+            /* grid-column: 1/4; */
+        }
+         /* button:hover{
+        background-color:orange;
+    } */
+        .body{
+    margin:0;
+    height:100vh;
+    background-image: url("data:image/jpeg;base64,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");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    
+        }
+        /* tabel border style */
+        table,th,td{
+            border:1px solid black;
+            border-collapse:collapse;
+        }
+         table{
+            width:50%;
+            margin-left: 25%;
+         }
+         th,td{
+            padding:10px;
+            text-align:center;
+        }
+        /* .fa{
+            font-size:36px;
+            color:blue;
+        } */
+    </style>
+</head>
+     <!-- HTML Elements -->
+<body>
+<!-- <div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+    <div class="box4">4</div>
+    <div class="box5">5</div>
+    <div class="box6">6</div>
+    </div> -->
+   <!-- heading -->
+    <!-- outline attribute -->
+    <h1 style="text-align:center; background-color:red; outline: 3px solid rgb(156, 23, 23); outline-offset:10px;"> The Food Spot</h1>
+    <!-- attributes -->
+    <div style="text-align:center;">
+        <!-- file path -->
+<img src="https://t3.ftcdn.net/jpg/02/97/67/70/360_F_297677001_zX7ZzRq8DObUV5IWTHAIhAae6DuiEQh4.jpg" alt="foodie" width="800px" height="650px"><br><br>
+<!-- class attribute -->
+<div class="text"><br><br><br><br>
+    <a href="https://www.zomato.com/coimbatore" target="_blank">Food Spot</a><br>
+    <br>
+     <button style="background-color:lightgreen; text-align:center;">Register</button>
+             <!-- vedio -->
+        <video width="120" height="140" controls
+            style="position:absolute; top: 130px; right:-80px;"
+  <source src="video.mp4" type="video/mp4">
+</video>
+<div class="row"></div>
+<!-- Form attributes -->
+      <!-- input types  -->
+       <!-- placeholder -->
+     <form action="/ktt.html"><br>
+        <label for="fname">First Name:</label>
+        <!-- autocomplete off -->
+        <input type="text" autocomplete="off" placeholder="Enter your First name" id="fname" name="fname" style="background-color:lightgrey; border-radius: 10px; border:1px solid black;"><br><br>
+        <label for="lname">Last Name:</label>
+        <input type="text" placeholder="Enter your Last name" id="lname" name="lname" style= "background-color:lightgrey;border-radius: 10px; border:1px solid black;"><br><br>
+        <label for="phone Number">Phone Number:</label>
+        <input type="tel" placeholder="Mobile Number" id="number" name="number" style="background-color:lightgrey;border-radius: 10px; border:1px solid black;"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" placeholder="Enter Email address" id="email" name="email" style="background-color:lightgrey; border-radius: 10px; border:1px solid black;"><br><br>
+        <label for="gender"> Gender:</label>
+                <!-- radio button -->
+        <input type="radio" id="male" name="gender" value="male" style="text-shadow: 0 0 5px #000; background-color:lightgrey;">male
+       <input type="radio" id="female" name="gender" value="female" style="text-shadow: 0 0 5px #000; background-color:lightgrey;">female<br><br>
+             <!-- submit button / reset button -->
+           <button type="submit" style="background-color: azure;border:2px dotted black;">Submit</button>
+        <button type="reset" style="background-color: azure;border:2px dotted black;">Reset</button><br>
+        <!-- svg graphics -->
+        <svg width="100" height="40">
+  <circle cx="50" cy="20" r="10" stroke="green" stroke-width="4" fill="yellow" />
+</svg>
+        <hr>
+
+     </form>
+     <form>
+        <table>
+                <tr>
+                    <th>Food Item</th>
+                    <th>Price</th>
+                </tr>
+                <tr>
+                    <td>Pizza</td>
+                    <td>₹100</td>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>₹150</td>
+                </tr>
+                <tr>
+                    <td>Pasta</td>
+                    <td>₹180</td>
+                </tr>
+                 <tr>
+                    <td>ICE CAKE </td>
+                    <td>₹100</td>
+                </tr>
+        </table>
+     </form>
+    <hr>
+    <div style="text-align:center;">
+        <p style="border-color:pink ; border:dotted">LOOK AND TOOK</p>
+        </div>
+    <!-- symbols -->
+    <!-- Entities -->
+    &copy;FOODSPOT@gamil.com
+    
+    <!-- button -->
+     <!-- alert button -->
+      <!-- span command (cursor)-->
+     <button onclick="alert('HELLO! How can I help You?(❁´◡`❁)')" style="background-color:lightgreen; cursor: wait; text-align:center; width:90px; height:20px;">Click Me</button>
+
+    <!-- text formatting  & text quotations-->
+    <p style="background-color:black;text-align:center;"><b>This cozy corner <mark>cafe serves</mark> the best <del>aromatic</del> <ins>delicious</ins> <i>coffee</i> and <q>freshly baked</q> .</b></p>
+     <!-- use an image as a link -->
+<a href="https://youtu.be/wFut2zYOT7k?si=rRm7cJBTMyx-ZABt" target="_blank">
+    <img src="image .png" alt="touch" style="width:40px;height:42px;"><br>
+</a>
+<!-- link -->
+     <div style=text-align:center;>
+        <a href="https://share.google/JT0JhJvIDSa528QLP" target="_blank">
+            <button style="background-color: brown; color:white;">Instagram</button>
+        </a>
+          <a href="https://share.google/tjWaJ2ab5QDCCDnrO" target="_blank">
+            <button style="background-color: brown; color:white;">youtube</button>
+        </a>
+          <a href="https://www.google.com/" target="_blank">
+            <button style="background-color: brown; color:white;">Google</button>
+          </a>
+          <!-- <nav>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+</nav> -->
+
+     </div>
+</div>
+</div><br><br>
+<!-- plug-ins -->
+<h2> My Resume</h2>
+<object data="resume.pdf" width="200" height="200"></object>
+<!-- <button onclick="getLocation()">Get My Location</button>
+<p id="output"></p>
+<script src="script.js"></script> -->
+</body>
+</html>

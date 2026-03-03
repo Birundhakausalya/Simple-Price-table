@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking</title>
+    <link rel="icon" href="img.png">
+    <style>
+      .hotel-card {
+        width: 450px;            
+        border: 2px dotted #ddd;  
+        border-radius: 20px;     
+        overflow: hidden;        
+        box-shadow: 0 4px 8px rgba(131, 52, 52, 0.2); 
+        font-family: arial;
+        margin: 20px auto; 
+        text-align: center;
+      }
+
+      .hotel-img {
+        width: 100%;              
+        height: 200px;
+        object-fit: auto;        
+      }
+
+      .hotel-info {
+        padding: 25px;
+        text-align: center;
+      }
+
+      .hotel-name {
+        margin: 5px 0;
+      }
+
+      .hotel-rating {
+        color: #f39c12;          
+      }
+
+      .hotel-price {
+        font-weight: bold;
+        margin: 15px 0;
+      }
+
+      .book-btn {
+        background-color: #070117;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .book-btn:hover {
+        background-color: #218838;
+      }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Hotel Booking</h1>
+    <div class="hotel-card">
+      <img src="img.png" alt="Hotel Image" class="hotel-img">
+      <a href="https://www.booking.com/index.html?aid=2336990;label=en-in-booking-desktop-FNUJyR1iYZtYeFdNgHudMQS652804038422:pl:ta:p1:p2:ac:ap:neg:fi:tikwd-17218370:lp9182246:li:dec:dm;ws=&gad_source=1&gad_campaignid=19856801640&gbraid=0AAAAAD_Ls1LlwPgMu0-yz_uS6pOlGpMyH&gclid=CjwKCAiAh5XNBhAAEiwA_Bu8Ffx3cyfrR7tHph1KzogcdmJ-AuI302vixJ9QLAcwnf1OvZshE65fhxoC1-4QAvD_BwE&chal_t=1772517048961&force_referer=https%3A%2F%2Fwww.google.com%2F" target="_balnk">Booking Spot</a>
+      <div class="hotel-info">
+          <h2 class="hotel-name">Hotel Paradise</h2>
+          <p class="hotel-rating" style="cursor: pointer;" >⭐⭐⭐⭐ &#9734;</p>
+          <p class="hotel-price">₹120 / night</p>
+          <button class="book-btn">Book Now</button>
+      </div>
+    </div>
+</body>
+</html>

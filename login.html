@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOTEL LOGIN</title>
+    <link rel="icon" href="/img.png">
+    <style>
+        body{
+            margin: 0;
+            font-family: arial;
+            background: linear-gradient(to night, red);
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .form-box{
+            background:white;
+            padding:30px;
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
+        }
+         h2{
+            text-align:center;
+        }
+        input{
+            width:100%;
+            padding: 8px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid yellow;
+        }
+        .btn{
+            width: 25%;
+            padding: 8px;
+            background: rgb(72, 72, 64);
+            color:white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .btn:hover{
+            background: lightcoral;
+        }
+        .link{
+            text-align:center;
+            margin-top: 10px;
+        }
+        .link a{
+            text-decoration:none;
+            color:aqua;
+        }
+    </style>
+</head>
+<body>
+        <div class="form-box">
+            <h2>Hotel Login</h2>
+            <form>
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter Email">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter Password"><br><br>
+                    <button class="btn">Submit</button>
+            </form>
+        <div class="link">
+            <p>Don't have an account?
+                <a href="register.html">Register</a>
+            </p>
+        </div>
+
+    </div>
+</body>
+</html>

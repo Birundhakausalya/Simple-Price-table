@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="icon" href="/photo.png">
+    <style>
+        body{
+            font-family: arial;
+            line-height: 1.6;
+            background-color:rgb(178, 185, 185);
+            color:black;
+        }
+        h1{
+          text-align: center;
+            padding: 2rem 0;
+            color:rgb(184, 110, 20);
+            margin-top: 0rem;
+        }
+        header{
+            bakground:rgb(219, 205, 205);
+            color:aquamarine;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+        }
+        nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        nav url{
+            list-style: none;
+            display: flex;
+        }
+        nav ul li a {
+            color: blueviolet;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+        nav ul li a:hover{
+            background-color: brown;
+            border-radius: 5px;
+        }
+        main{
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        section{
+            margin-bottom: 2rem;
+            background: red ;
+            padding:2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(red, green, blue, alpha);
+        }
+        h2{
+            color:blue;
+            margin-bottom: 1rem;
+        }
+        #about img{
+            max-width: 120px;
+            height: auto;
+            border-radius: 50%;
+            float: left;
+            margin-right: 1.5rem;
+        }
+        .project-card{
+            background:yellow;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+        .project-card a{
+            text-decoration:none;
+            color:rgb(7, 250, 32);
+            font-weight: bold;
+        }
+        footer{
+            text-align: center;
+            padding: 1rem 0;
+            background:red;
+            color:bisque;
+            margin-top: 2rem;
+        }
+        @media (max-width: 768px){
+            nav, nav ul{
+                flex-direction: column;
+                text-align:center;
+            }
+            nav h1{
+                margin-bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>BIRUNDHA K</h1>
+            <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <img src="/pic.jpeg" alt="Your Profile Picture">
+            <p>About Me</p>
+            <p>HI, I am a Web Developer and Designer. Welcome to my portfolio!</p>
+            <p>Here you can find information regarding my educational background and prior experiences.</p>
+        </section>
+        <section id="project">
+            <h2>Projects</h2>
+            <div class="project-card">
+                <h3>Project 1</h3>
+                <vedio width="500" height="300" controls>
+                    <source src="vedio.mp4" type="vedio/mp4">
+                    Your browser does not support the vedio tag.
+                </vedio>
+                <p>Food waste Mangement System.</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: birundhakausalya475@gmail.com</p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/birundha-k-5061762a3/">VIEW LINKEDIN PROFILE</a></p>
+            <p>GitHub: <a href="https://github.com/Birundhakausalya">VIEW GITHUB PROFILE</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Birundha/birundhakausalya475@gmail.com</p>
+    </footer>
+</body>
+</html>
